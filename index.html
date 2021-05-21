@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Oprah Likes You. And so do other people.</title>
+    <title>Jeep's here baby!</title>
 
     <style>
         /* Basic CSS comment */
@@ -24,7 +24,14 @@
         alert("I am here!"); */
         // and a single line comment!
         var username = prompt("Your name Please: ", "Newbie");
-        document.write("<h1> Hello " + username + "!</h1>");
+        var car = new Array("BMW", "Ford", "Jeep");
+        if (username === "Maz") {
+            document.write("<h1> Hello " + username + ", you won a " + car[2] + "!</h1>");
+        }
+        else {
+            document.write("<h1> Hello " + username + "!</h1>");
+        }
+
 
     </script>
 
@@ -32,6 +39,7 @@
 </head>
 
 <body>
+    <img src="jeep.jpg" alt="Jeep">
 </body>
 
 </html>
