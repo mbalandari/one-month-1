@@ -31,9 +31,12 @@
         // and a single line comment!
         var username = prompt("Your name Please: ", "Newbie");
         var car = new Array("BMW", "Ford", "Jeep");
-        console.log(car);
-        if (username === "Maz") {
-            document.write("<h1> Hello " + username + ", you won a " + car[2] + "!</h1>");
+        var randomNumber = Math.floor(Math.random() * car.length);
+        console.log(randomNumber);
+
+        if (username === "Maz" || username === "Mazyar") {
+            document.write("<h1> Hello " + username + ", you won a " + car[randomNumber] + "!</h1>");
+            document.write('<img src="' + car[randomNumber] + '.jpg">');
         }
         else {
             document.write("<h1> Hello " + username + "!</h1>");
@@ -46,7 +49,7 @@
 </head>
 
 <body>
-    <img src="jeep.jpg" alt="Jeep">
+
 </body>
 
 </html>
