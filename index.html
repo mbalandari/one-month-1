@@ -17,6 +17,12 @@
             font-size: 80px;
             color: #333;
         }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
     <script>
@@ -25,6 +31,7 @@
         // and a single line comment!
         var username = prompt("Your name Please: ", "Newbie");
         var car = new Array("BMW", "Ford", "Jeep");
+        console.log(car);
         if (username === "Maz") {
             document.write("<h1> Hello " + username + ", you won a " + car[2] + "!</h1>");
         }
